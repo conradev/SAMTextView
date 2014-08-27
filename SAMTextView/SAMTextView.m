@@ -135,6 +135,12 @@
 }
 
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self setNeedsDisplay];
+}
+
+
 #pragma mark - Placeholder
 
 - (CGRect)placeholderRectForBounds:(CGRect)bounds {
