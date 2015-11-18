@@ -51,7 +51,7 @@
 		}
 	}
 
-	self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:string attributes:attributes];
+    self.attributedPlaceholder = (string ? [[NSAttributedString alloc] initWithString:string attributes:attributes] : nil);
 }
 
 
